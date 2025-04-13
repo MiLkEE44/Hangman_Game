@@ -31,10 +31,11 @@ while not game_over:
         print("You've already guessed this letter, try another.")
     else:
         guessed_letters.append(guess)
-    # if they guessed a correct letter it gets added 
-    # and appended to the lists under game_over
-    # Guess letters replaces the _ and if the letter
-    #is not guessed it just shows _
+    # if they guessed a correct letter it replaces the _
+    # in the display where each _ is a letter in the word
+    # it also gets appended to the lists under game_over
+    # other wise the _ is non guessed letters showing 
+    # the lenght of the word 
     for letter in chosen_word:
         if letter == guess:
             display += letter
